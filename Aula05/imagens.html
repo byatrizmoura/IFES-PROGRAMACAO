@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <hr>
+    <a href="lua.html">
+    <img src="img/moon.png" alt="Lua" width="200">
+    </a>
+    <a href="sun.html"></a>
+    <img src="img/sun.png" alt="Sol" width="200">
+    </a>
+    <a href="world.html"></a>
+    <img src="img/world.png" alt="Mundo" width="200">
+    </a>
+    <br>
+    <br>
+    <br>
+    <img src="img/formas.png" alt="Formas Geométricas" usemap="#formas">
+    <map name="formas">
+        <area shape="circle" coords="71,74,68" href="circulo.html" alt="Circulo">
+        <area shape="rect" coords="177,139,314,2" href="quadrado.html" alt="Quadrado">
+        <area shape="rect" coords="352,114,526,28" href="retangulo.html" alt="Retangulo">
+        <area shape="poly" coords="567,132,627,10,688,132" href="triangulo.html" alt="Triangulo">
+    </map>
+    <!--Para as coordenadas abrir a img no paint
+        circle: centro(x,y) e raio
+        rect: canto inferior esquerdo e canto superior direito
+        poly: coordenadas dos vertices, dependendo de quantos tiverem, exemplo, triangulo tem 3 -->
+
+    <img src="img/mapa_brasil.png" alt="Mapa do Brasil" usemap="#image-map">
+    <map name="image-map">
+        <area target="" alt="Espirito Santo" title="Espirito Santo" href="es.html"
+            coords="684,489,675,482,664,483,661,492,661,500,660,510,655,517,652,525,646,529,640,536,643,545,649,551,656,551,663,545,669,539,675,525,682,516,684,501"
+            shape="poly">
+        <area target="" alt="Rio de Janeiro" title="Rio de Janeiro" href="rj.html"
+            coords="633,587,642,574,653,567,656,555,644,546,637,544,630,553,626,560,615,563,604,565,592,566,583,571,587,576,593,579,581,588,598,587,616,585"
+            shape="poly">
+    </map>
+</body>
+</html>
