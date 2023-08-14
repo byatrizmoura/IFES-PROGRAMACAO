@@ -1,0 +1,58 @@
+/* Pseudo seletor é correto usar :: (duplo), mas usa-se : para manter compatibilidade com navegadores antigos */
+
+/* Pseudo seletor que permite adicionar conteúdo logo depois de um elemento */
+p:after {
+    content: " *"; /* adc conteúdo a todos elementos*/
+}
+
+/* Pseudo seletor que permite adicionar conteúdo logo antes de um elemento */
+#p1:before {
+    content: " **";
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+}
+h1:after {
+    content: " ";
+    background-image: linear-gradient(120deg, #e5ea15, #00c4ff); /* gera um gradiente, sendo os comandos: angulo, primeira cor, segunda cor */
+    width: 90%;
+    height: 5px;
+    position: absolute; /* se o elemento filho é posicionado de modo absoluto, o elemento pai deve estar posicionado relativo */
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) skew(-50deg);/* transformação usando css, onde translação no eixo horizontal e inclinação */
+}
+
+#p3:first-letter {
+    font-size: 200%;
+    color: red;
+}
+
+#p2:first-line {
+    background-color: yellowgreen;
+}
+
+/* marcador das linhas dentro de ul ou ol */
+ul>li::marker {
+    content: " *";
+    font-size: 90%;
+}
+
+ol>li::marker {
+    color: red;
+}
+
+/* pseudo seletores baseados em valores de atributos
+^= (começar com...) 
+$= (termina com...)  */
+a[href^="http"] {
+    display: block; /* bloco ocupa toda a faixa horizontal disponivel */
+    font-weight: bold;
+    
+}
+
+a[href$=".pdf"]::after {
+    content: "(.pdf)";
+}

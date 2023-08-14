@@ -1,0 +1,47 @@
+/* a propriedade display determina quando e onde um elemento será mostrado*/
+* {
+    border: solid 1px black;
+}
+
+span {
+    display: block;
+    height: 100px;
+    width: 300px;
+    display: inline-block;
+}
+
+a, img {
+    display: block;
+}
+
+a {
+    /* display: none; não é mostrado e seu lugar é tomado pelo item abaixo */
+    visibility: hidden; /* invisivel e seu lugar fica reservado */
+}
+
+div {
+    margin: 30px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    transition: 0.7s;
+}
+
+#div1 {
+    background-color: blue;
+}
+
+#div2 {
+    background-color: rebeccapurple;
+}
+
+#div3 {
+    background-color: orangered;
+}
+
+div:hover {
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+

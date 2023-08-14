@@ -1,0 +1,32 @@
+body {
+   /* background-color: rgb(185, 180, 180);
+    background-image: url("bg.png");
+    background-repeat: repeat;          -x horizontal e -y vertical   
+    background-position: right bottom;          posição da imagem 
+    background-attachment: fixed;    fundo fixo
+    RESUMINDO TUDO EM UMA LINHA: */
+    background: gray url("bg.png") repeat fixed;
+    background-size: 50px; /*Tamanho da imagem que esta sendo exibida */
+}
+/* RGB red green blue
+HSL matiz saturação e brilho 
+RGBA define opacidade */
+p {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+
+    border-color: black;
+    border-style: solid; /* pode ser passado 4 valores sendo: para cima, para esquerda, para baixo, para direita. E assim configurar as bordas de uma maneira mais resumida*/
+    border-width: 3 px; /* todas as bordas */
+    border-left-width: 15px; /* somente a borda selecionada */
+    border: 3px solid black; /* configurar em uma linha LARGURA, ESTILO E COR da borda */
+    border-radius: 10px; /* define o raio de arredondamento dos campos */
+}
+
+#p1 {
+    margin: 50px auto; /* MARGEM EXTERNA| ou, 50px 10px 25px 20px, sendo superior, direita, inferior, esquerda. Para configurar todos em uma linha*/
+    padding: 50px; /* MARGEM INTERNA | pode ser configurada da mesma maneira  */
+
+    outline-style: solid; /* BORDA EXTERNA, sempre para o elemento inteiro */
+    outline: 3px solid black; /* configurar em uma linha LARGURA, ESTILO E COR da borda externa */
+}

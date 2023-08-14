@@ -1,0 +1,64 @@
+body, a {
+    color: gray;
+}
+
+h1 {
+    font-size: 5vw; /* 1vw=1% da largura disponível no site */
+    text-align: center;
+    text-shadow: 1px 1px 2px black; /* horizontal vertical borramento cor / se colocar 0 0 --px cor é definido um brilho externo na fonte*/
+    font-family: "Brush Script MT", sans-serif; /* familia de fonte (sem aspas) / fonte ("") */
+    font-style: italic;
+    font-weight: lighter;
+    font-variant: small-caps; /* caixa alta e diferente de maiúscula */
+}
+
+p {
+    text-align: justify;
+    text-decoration: underline double;
+    text-transform: capitalize;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    line-height: 2rem; /* 1rem equilave 16px */
+    word-spacing: -2px;
+    white-space: normal; /* espaços em branco e quebras de linha // configuraçao pre deixa os espaços definidos no codigo fonte*/
+}
+
+#p1 {
+    font: normal small-caps bold 30px/60px "arial"; /* ordem: font-style font-variant font-weight font-size/line-height font-family*/
+}
+
+a:link {
+    color: blueviolet;
+    text-decoration: none;
+    cursor: crosshair; /* muda a aparencia do cursor quando esta sobre o link */
+} /* links não visitados */
+
+a:visited {
+    color: rgb(43, 226, 67)
+}/* links visitados */
+
+a:hover {
+    color: orange
+} /* links com o cursor do mouse em cima */
+
+a:active {
+    color: yellow
+} /* links pressionado pelo mouse */
+
+a {
+    border: solid 1px black;
+    padding: 5px;
+    background-color: lightseagreen;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    line-height: 35px;
+    display: inline-block;
+}

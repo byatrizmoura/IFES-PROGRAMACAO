@@ -1,0 +1,59 @@
+/* Seletor por tipo */
+
+h1 {
+    color: blue;
+}
+
+i {
+    color: red;
+}
+
+ul {
+    background: rgb(16, 16, 189);
+}
+
+p {
+    color: orange;
+}
+
+/* Seletor por classe - iniciam com o ponto*/
+.vermelho {
+    color: red;
+}
+
+/* Seletor por Id - junto com o # (hashtag) 
+e o exemplo que é possivel agrupar seletores com a mesma configuração*/
+#p2, a, h1 {
+    font-size: 24px;
+    color: blue;
+}
+
+/* Em conflito segue hierarquia por mais específico, sendo o primeiro mais específico o Id, o segundo Classe e o terceiro por tipo*/
+
+/* Seletor universal  -- pouco específico; configurações padrão*/
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Seletor de descendentes - genérico - qualquer descendente
+podendo ser usado qualquer seletores como de tipo e classe ou id*/ 
+h1 i {
+    color: yellow
+}
+
+/* Seletor pai/filho - mais específico*/
+h1 > i {
+    color: green;
+}
+
+/* Seletor de elementos irmãos ou vizinhos, posteriores ao elemento principal */
+ul ~ p{
+    text-decoration: underline;
+}
+
+/* Seletor específico para o primeiro vizinho adjacente */
+ul + p {
+    text-decoration: none;
+}
+
+
