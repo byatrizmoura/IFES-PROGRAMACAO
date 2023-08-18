@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: antiquewhite;
+    height: 400px;
+    display: flex;
+   /* flex-direction: row; /* Organiza os elementos em linha ou coluna, dedfinindo aqui o seu eixo principal */
+    /* flex-wrap: wrap;*/ /* Por padrão os itens flexbox ficam sempre na mesma linha,  este permite a quebra de linha */
+    flex-flow: row nowrap; /* forma de colocar em uma linha o flex-direction e flex-wrap */
+    justify-content: space-evenly;
+    align-items: center; /* alinhamento entre itens*/
+    align-content: stretch; /* alinhamento vertical das linhas*/
+
+}
+
+div {
+    /* height: 120px;*/ 
+    width: 20%;
+    border: dotted 2px black;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120px;
+    /*flex-grow: 1;  propriedade que define o crescimento proporcional */
+}
+
+#div3{
+    /* flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 200px;  largura constante definida */
+    flex: 0 0 200px; /* forma de definir em uma linha sendo a ordem: flex-grow  flex-shrink e flex-basis*/
+    align-self: flex-start; /* alinhamento especifico para este elemento */
+}
+/*
+#div1, #div3, #div7 {
+    height: 150px; 
+}
+
+#div3 {
+    flex-grow: 2;
+}*/
+
+/*#div5 { 
+    flex-shrink: 2; propriedade que define o encolhimento proporcional 
+}*/
+
+/* Definindo a ordem dos elementos 
+#div1 { 
+    order: 3;
+}
+#div2 {
+    order: 5;
+}
+#div3 {
+    order: 2;
+}
+#div4 {
+    order: 1;
+}
+#div5 {
+    order: 7;
+}
+#div6 {
+    order: 4;
+}
+#div7 {
+    order: 6;
+}  */
+
+
